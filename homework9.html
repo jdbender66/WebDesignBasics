@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+		<script src="jquery-1.11.0.min.js"></script>
+
+		<link href="css/smoothness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.js"></script>
+		
+		<script src="js/lightbox.min.js"></script>
+		<link href="css/lightbox.css" rel="stylesheet" />
+<!--		<link rel="stylesheet" href="css/screen.css">
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>  
+-->		
+
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+		<title>Homework #9</title>
+		<meta http-equiv="content-type" 
+		content="text/html;charset=utf-8" />
+		
+		
+		
+		
+	
+				
+				<script>
+		  $(function() {
+			$( "#accordion" ).accordion();
+		  });
+		  </script>
+		
+		
+		
+  
+		<script>
+		$(document).ready(function(){
+		  $('button[id^="moreinfo"]').click(function(){
+			$("#bodytext").remove();
+			$("#bodytext2").fadeIn(3000);
+		  });
+		});
+		</script>
+		
+		<script>
+		$(document).ready(function(){
+		  $('button[id^="navbar2"]').click(function(){
+			$("#navbar").load("homework9b.html");
+		  });
+		});
+		</script>
+
+		
+		<script>
+		$(document).ready(function(){
+		  $('button[id^="normaltext"]').click(function(){
+			$("p").toggleClass("tmr");
+		  });
+		});
+		</script>
+		
+		<style type="text/css">
+		
+		
+		 
+		p.boomy{font-family:"Times New Roman", Gadget, sans-serif; font-size:2em; font-weight:bold; color:blue; text-align: center; background-color:#AFEEEE;}
+		p.tmr{font-family:"Arial Black", Gadget, sans-serif; font-size:1.0em; color:black}
+		p.ah{font-family:Arial,Helvetica,sans-serif; font-size:0.775em; color:white}
+		p.tmrtwo{font-family:"Arial Black", Gadget, sans-serif; font-variant:small-caps; color:DarkSlateBlue; text-align: center; }
+		p.tmrthree{font-family:"Helvetica", Gadget, sans-serif; font-size: 1.5em; letter-spacing:2px; text-transform:uppercase; background-color:#ADD8E6; font-weight:bold; color:darkblue; text-shadow:2px 2px #000000; }
+		p.ahtwo{font-family: 'Yanone Kaffeesatz', sans-serif; font-size:1.5em; line-height:150%; letter-spacing:1.35px; font-weight:bold; color:Black}
+		p.ahthree{font-family:Georgia, serif; font-size:.8em; font-weight:bold; color:white}
+			
+			
+
+		body {
+		margin: 0; 
+		padding: 0; 
+		background-color:white;
+		}
+				
+		
+		div#banner {
+		color: gold;
+		background-color: #111253;
+		border-bottom: 3px solid gold;
+		}
+
+		div#banner h1
+		{
+		margin: 0;
+		padding: .3em 0 .3em .5em;
+		font-size: 2.2em;
+		font-weight: normal;
+		}
+		
+		img.coa
+		{
+		height:55px;
+		}
+		
+		div#banner img{
+		position:absolute;
+left:650px;
+top:3px;
+		}
+		
+		div#joeyb{
+		float:right;
+		padding-left:50px;
+		}
+		
+		div#container
+		{
+		background-image: url(nav_col_base.jpg);
+		background-repeat: repeat-y;
+		}
+		
+		div#container2
+		{
+		background-image: url(more_col_base.jpg);
+		background-repeat: repeat-y;
+		background-position: right;
+		}
+		
+
+		
+		
+		div#navigation
+		{
+		float: left;
+		width: 150px;
+		padding-top: 2em;
+		}
+		
+		div#navigation ul 
+		{
+		list-style-type: none; 
+		padding: 0; 
+		margin: 0; 
+		}
+		
+		div#navigation ul li { margin-top: 4px; }
+		
+		#navigation ul li a
+		{
+		display: block;
+		width: 135px;
+		padding: 3px 5px 3px 10px;
+		text-decoration: none;
+		color: #000;
+		background-image: url(nav_base.jpg);
+		background-repeat: repeat-y;
+		}
+				
+		#navigation ul li a:hover
+		{
+		color: #fff;
+		background-color: #ccc;
+		background-image: url(nav_base2.jpg);
+		background-repeat: repeat-y;
+		}
+		
+		div#more
+		{
+		float: right;
+		width: 160px;
+		margin: 0;
+		padding: 2em 10px 0 0;
+		color: #fff;
+		}
+		
+		
+		div#more h3
+		{
+		margin-top: 0;
+		color: Black;
+		padding: .2em;
+		border: 3px solid black;
+		background-image: url(more_base.jpg);
+		background-position: right;
+		background-repeat: repeat-y;
+		}
+		
+		div#content
+		{
+		margin-left: 190px;
+		margin-right: 200px;
+		}
+		
+		div#contenttwo
+		{
+		margin-left: 190px;
+		margin-right: 200px;
+		}
+		
+		div#content h2
+		{
+		font-size: 2em;
+		color: #036;
+		margin: 0;
+		padding-top: 1em;
+		font-weight: normal;
+		}
+		
+		div#content { line-height: 150%; }
+
+		#cleardiv
+		{
+		clear: both;
+		height: 1em;
+		}
+		
+		div#footer
+		{
+		clear: both;
+		padding: .5em 1em;
+		border-top: 1px solid #999;
+		text-align: right;
+		}
+		
+		div#footer ul 
+		{
+		padding: 0; 
+		margin: 0; 
+		list-style-type: none; 
+		}
+		
+		div#footer li
+		{
+		display: inline;
+		margin-right: 1em;
+		}
+		
+		#locale {
+			
+		 }
+		 
+		 
+		
+		
+	</style>
+		
+		
+</head>
+
+<body>
+
+   <div id="wrapper">
+
+   <body>
+   
+<div id="banner">
+<h1>Cathedral of Learning</h1>
+
+<div id="joeyb">
+		<img src="joeyblogo.jpg"/>
+
+		</div>
+		
+		<img class="coa" src="coa.jpg"/>
+		
+		
+
+</div>
+
+
+<div id="container">
+	<div id="container2">
+	
+		<div id="navigation">
+		<ul>
+				<li><a href="http://en.wikipedia.org/wiki/Cathedral_of_Learning">Wikipedia</a></li>
+				<li><a href="http://www.nationalityrooms.pitt.edu/about/cathedral-learning">Nationality Rooms</a></li>
+				<li><a href="http://www.youtube.com/watch?v=fjOdkFw0BX4">Tour</a></li>
+				</ul>
+				
+		</div>
+		
+		<div id="more">
+		<h3>A Beacon of Knowledge</h3>
+		The Cathedral of Learning, a Pittsburgh landmark listed in the National Register of Historic Places, is the centrepiece of the University of Pittsburgh's main campus in the Oakland neighborhood of Pittsburgh, Pennsylvania, United States. 
+		</div>
+		
+<div id="content">
+		<br>
+		<div id="navbar">
+		<center><button id="navbar2">Show Navigation Bar</button></center>
+		</div>
+		<h2>The Heart of the University of Pittsburgh</h2>
+		<br>
+		<center><button id="normaltext">Toggle text effects for readability</button></center>
+		<br>
+		
+		<div id="bodytext2" style="display:none;">
+			<p class="tmr" >
+			In 1921, John Gabbert Bowman became the tenth chancellor of the university. At that time, the school consisted of a series of buildings constructed along Henry Hornbostel's plan for the campus and included 'temporary' wooden structures built during World War I. He then began to envision a 'tall building', that would be later termed the Cathedral of Learning, to provide a dramatic symbol of education for the city and alleviate overcrowding by adding much needed space in order to meet present and future needs of the university.
+			</p>
+			</div>
+		
+		
+		<div id="bodytext">
+			<p class="tmr">
+			Standing at 535 feet (>163 m), the 42-story Late Gothic Revival Cathedral is the tallest educational building in the Western hemisphere and the second tallest university building (fourth tallest educationally-purposed building) in the world. It is also the second tallest gothic-styled building in the world. The Cathedral of Learning was commissioned in 1921 and ground was broken in 1926. The first class was held in the building in 1931 and its exterior finished in October 1934, prior to its formal dedication in June 1937. The Cathedral is a steel frame structure overlaid with Indiana limestone and contains more than 2,000 rooms and windows. It functions as a primary classroom and administrative center of the university, and is home to the Dietrich School of Arts and Sciences and many of its departments, as well as the University Honors College and the College of General Studies. It houses many speciality spaces, including a studio theater, food court, study lounges, offices, computer and language labs, 29 Nationality Rooms, and a half acre, 4-story high, vaulted, gothic study and event hall. The building contains noted examples of stained glass, stone, wood, and iron work and is often used by the university in photographs, postcards, and other advertisements.
+			</p>
+			</div>
+			<center><button id="moreinfo">Get more info!</button></center>
+			<br>
+			
+			<h2>Notable Rooms in the Cathedral:</h2>
+			<br>
+			
+			<div id="accordion">
+  <h3>Babcock Room</h3>
+  <div>
+    <p>
+	The Edward V. Babcock Memorial Room is a plush, carpeted, wood-paneled conference room constructed on the 40th floor for use as the University trustees' boardroom. Funded by a Babcock family grant of $327,000 ($2.67 million in 2014 dollars) and dedicated in November 1958, all of the room’s features are original, except for the lighting, furniture and carpeting. The room's square shape is modified by four alcoves, in one of which is a portrait of Babcock by Malcolm Stevens Parcell. The walls, featuring intricate geometric patterns, are paneled in Appalachian white oak with burled walnut inlays and touches of rosewood.
+    </p>
+  </div>
+  <h3>Braun Room</h3>
+  <div>
+    <p>
+    Following the opening of the Cathedral of Learning, the offices of the Dean of Women moved to the 12th floor of the Cathedral in 1938. The interior was unfinished but Dean Amos envisioned a dignified and beautiful space for women to meet.
+When Dean Amos died in 1941, the new quarters were still unfinished. The Alumnae Association created the Thyrsa W. Amos Fund to plaster the walls and to furnish Room 1217 in her name. Room 1217 was never finished, but after World War II the other rooms on the twelfth floor were completed. Mrs. A. E. Braun donated the furnishings and floral carved mahogany wood paneling which she had purchased in 1941 from the library of the home of Grant McCargo in the East End of Pittsburgh. The Braun Room was dedicated in 1946 and serves, along with its furniture, as an example of a modern reproduction of Louis XV design. Original blue carpeting was replaced in 1955 with an oriental rug, named "The Iron Rug of Persia", that was donated by the daughter and son-in-law of A. E. Braun. Other features of the room include a low bookcase, bordered and topped with classic carving, that was crafted by university carpenters to replace the original fireplace whose inclusion was impractical on the 12th floor, along with two crystal drop chandeliers.
+    </p>
+  </div>
+  <h3>Croghan-Schenley Ballroom</h3>
+  <div>
+    <p>
+    The Croghan-Schenley room, situated on the first floor of the Cathedral in room 156, is actually two adjoining Greek Revival rooms, the Ballroom and the Oval Room, connected by a hidden passageway in the Ballroom's fireplace. The rooms were originally part of William Croghan Jr.'s mansion, known as the Picnic House, built in 1830 in the Stanton Heights area of Pittsburgh. The rooms themselves were created in 1835 by the Philadelphia carver Mordecai Van Horn, and they have been regarded as being among the most lavish examples of Greek Revival designs in America.
+    </p>
+  </div>
+  <h3>Frick Auditorium</h3>
+  <div>
+    <p>
+    The Frick Auditorium is a lecture hall in room 324 of the Cathedral of Learning. It features stone mullions, chambranle, and other trim as well as wooden lecture seating and a coffered ceiling. A centerpiece element in the room is a Nicholas Lochoff reproduction of The Resurrection by Piero della Francesca that was purchased for the lecture hall by Helen Clay Frick. Frick would later donate a large collection of Lochoff reproductions to the university which are on display in the Nicholas Lochoff Cloisture in the university's Frick Fine Arts Building.
+    </p>
+   
+  </div>
+</div>
+<br>
+<center>
+Images of the Cathedral:&nbsp;
+<a href="cathy2.jpg" data-lightbox="cathy2">Exterior</a>
+<a href="cathy3.jpg" data-lightbox="cathy3">Lit Up</a>
+<a href="cathy4.jpg" data-lightbox="cathy4">Interior</a>
+</center>
+
+</div>
+<br>
+<br>
+
+
+
+<br>
+
+		
+		<div id="locale">
+		<center><img src="cathy.jpg" border="10" style="bordercolor : Gold"/></center><br><br><br>
+		
+		</div>
+		
+		
+		
+		<div id="cleardiv">
+		
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+
+<ul>
+		<li><a href="http://www.pitt.edu/">Pitt Website</a></li>
+		<li><a href="index.html">Copyright &copy; Joe Bender</a></li>
+</ul>
+
+
+</div>
+
+</body>
+   
+   
+	
+</div> 
+	
+	
+</body>
+</html>
